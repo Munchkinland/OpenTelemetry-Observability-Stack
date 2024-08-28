@@ -1,0 +1,26 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:  # Habilita el protocolo gRPC para recibir datos
+      http:  # Habilita el protocolo HTTP para recibir datos
+
+exporters:
+  prometheus:
+    endpoint: "0.0.0.0:9464"  # Exporta métricas a Prometheus
+
+  logging:
+    verbosity: Detailed  # Configura el logging para depuración
+
+  otlp:
+    endpoint: "http://jaeger:14268"  # Exporta datos usando HTTP a Jaeger
+    tls:
+      insecure: true  # Configura TLS como inseguro
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]  # Recibe trazas usando el receptor OTLP
+      exporters: [logging, otlp]  # Exporta trazas a logging y a Jaeger
+    metrics:
+      receivers: [otlp]  # Recibe métricas usando el receptor OTLP
+      exporters: [prometheus]  # Exporta métricas a Prometheus

@@ -1,0 +1,68 @@
+# Python cache and virtual environment files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+*.env
+
+# Logs
+*.log
+
+# Docker related files
+*.pid
+*.swp
+docker-compose.override.yml
+
+# PyCharm specific
+.idea/
+
+# Visual Studio Code specific
+.vscode/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Compiled C extensions
+*.so
+
+# MacOS specific
+.DS_Store
+
+# Thumbnails
+._*
+
+# Test results
+.coverage
+*.cover
+.tox/
+
+# MySQL/MariaDB specific
+*.sql
+*.sqlite
+
+# Binary data
+*.bak
+
+# Backup files
+*.bak
+
+# Environment variables file
+.env
+
+# Node modules
+node_modules/
+npm-debug.log
+
+# Git-specific files
+*.orig
+*.rej
+
+# Ignore Docker-compose override file
+docker-compose.override.yml
+
+# Ignore Grafana database
+grafana/grafana.db
