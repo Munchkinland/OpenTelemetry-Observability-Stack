@@ -31,6 +31,7 @@ En un entorno de microservicios, es fundamental contar con una infraestructura r
 ## Estructura del Proyecto
 
 /OpenTelemetry-Observability-Stack 
+
 ├── app/ │
 
 ├── app.py # Aplicación de ejemplo en Flask │
