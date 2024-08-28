@@ -30,10 +30,21 @@ En un entorno de microservicios, es fundamental contar con una infraestructura r
 
 ## Estructura del Proyecto
 
-/OpenTelemetry-Observability-Stack ├── app/ │ ├── app.py # Aplicación de ejemplo en Flask │ └── Dockerfile # Dockerfile para la aplicación Flask ├── nginx/ │ └── nginx.conf # Configuración de Nginx ├── collector/ │ └── config.yaml # Configuración del colector OpenTelemetry ├── grafana/ │ └── provisioning/ # Configuración inicial de Grafana ├── prometheus/ │ └── prometheus.yml # Configuración de Prometheus ├── docker-compose.yml # Archivo de configuración de Docker Compose └── README.md # Este archivo
+/OpenTelemetry-Observability-Stack 
+├── app/ │
+├── app.py # Aplicación de ejemplo en Flask │
+└── Dockerfile # Dockerfile para la aplicación Flask 
+├── nginx/ │ 
+└── nginx.conf # Configuración de Nginx
+├── collector/ │
+└── config.yaml # Configuración del colector OpenTelemetry 
+├── grafana/ │ 
+└── provisioning/ # Configuración inicial de Grafana 
+├── prometheus/ │ 
+└── prometheus.yml # Configuración de Prometheus 
+├── docker-compose.yml # Archivo de configuración de Docker Compose 
+└── README.md # Este archivo
 
-markdown
-Copiar código
 
 ## Requisitos Previos
 
